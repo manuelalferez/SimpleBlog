@@ -1,0 +1,58 @@
+@font-face {
+    font-family: ubuntu;
+    src: url(../fonts/Ubuntu-Regular.ttf);
+}
+
+body {
+    font-family: "ubuntu";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: 2em;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post {
+    margin-bottom: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active{
+    color: blue;
+}
+
+.date {
+    color: gray;
+    margin-left: 1em;
+}
+
+@media (max-width: 425px) {
+    .post {
+        display: flex;
+        flex-direction: column;
+    }
+    .date {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 375px) {
+    body {
+        font-size: 12px;
+    }
+}

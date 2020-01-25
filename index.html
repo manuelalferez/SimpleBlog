@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Lumber</title>
+	<link rel="stylesheet" href="styles/styles.css">
+	<link rel="icon" href="favicon.png">
+
+	<!--
+		Introduce here your data
+	-->
+	<script>
+		const data = [
+			{
+				title: "Bienvenida",
+				url: "https://telegra.ph/Bienvenida-01-25",
+				date: "Enero 25, 2020",
+				key: "1"
+			}
+		];
+	</script>
+</head>
+
+<body>
+	<h1>Lumber</h1>
+	<div class="posts" id="posts">
+	</div>
+
+	<script>
+		data.forEach((item) => {
+			document.getElementById("posts").innerHTML +=
+				`<div class="post" key=${item.key}>
+			<a href=${item.url} target="_blank"
+				rel="noopener noreferrer">
+				${item.title}
+			</a>
+			<span class="date">${item.date}</span>
+		</div>`;
+		});
+	</script>
+</body>
+
+</html>
