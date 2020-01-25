@@ -22,6 +22,12 @@ _Esta página web enlaza tus posts externos con tu blog._
 		];
 	</script>
 ```
+**Introduce el nombre de tu blog**
+
+```
+<h1>Título del blog</h1>
+```
+
 
 ## Autores ✒️
 
